@@ -33,7 +33,7 @@
     border: none;
     outline: none;
     text-align: center;
-    background-color: #1e4394;
+    background: linear-gradient(to bottom right, blueviolet, brown, slateblue, saddlebrown);
     color: #fefefe;
     border-radius: 6px;
     font-size: 1.6rem;
@@ -41,12 +41,13 @@
     cursor: pointer;
     outline-offset: -6px;
     outline: 1px dotted white;
-    transition: background-color 0.3s, outline-offset 0.3s;
+    transition: background-color 0.4s, outline-offset 0.3s; 
 }
 
 .search-btn:hover {
-    background-color: #1e4aaab4;
+    background: linear-gradient(to bottom right, saddlebrown, slateblue, brown, blueviolet);
     outline-offset: 4px;
 }
+
 
 

@@ -1,0 +1,242 @@
+
+.profile-container {
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(to bottom right, blueviolet, brown, slateblue, saddlebrown);
+
+    border-radius: 8px;
+    font-family: Poppin;
+    width: 700px;
+}
+.profile-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.profile-img {
+    height: 100%;
+}
+
+.profile-avatar {
+    width: 150px;
+    border-radius: 50%;
+    outline-offset: 3px;
+    outline: 2px dotted #fff;
+    cursor: pointer;
+}
+
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-name {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+a.profile-username {
+    color: #fefefe;
+    text-decoration: none;
+    text-align: start;
+    margin-top: -20px;
+}
+
+a.profile-username:hover {
+    color:aqua;
+}
+
+.profile-bio {
+    margin: 30px 20px 20px 5px;
+    color: #ece4e4b2;
+    line-height: 1rem;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+    border-radius: 6px;
+    background: linear-gradient(to bottom right, lightseagreen  ,rgba(255, 127, 80, 0.747) ,cadetblue );
+    font-size: 1rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+.stats {
+    color: #1544a8;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-top:15px;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-company{
+    margin-top: 22px;
+}
+
+.profile-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.twitter-link , .profile-url {
+    background: linear-gradient(to bottom right, lightseagreen  ,rgba(255, 127, 80, 0.747) ,cadetblue );
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fefefe;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    outline-offset: -6px;
+    outline: 1px dotted white;
+    transition: outline-offset 0.3s; 
+}
+
+.twitter-link:hover , .profile-url:hover{
+    color: white;
+    outline-offset: 4px;
+}
+
+
+@media (max-width: 900px) {
+    .main-heading {
+        font-size: 25px;
+    }
+    .search-input {
+        width: 400px;
+    }
+    .profile-container {
+        width: 500px;
+    }
+    .profile-avatar {
+        width: 80px;
+    }
+    .profile-des {
+        width: 350px;
+        gap: 50px;
+    }
+    .profile-name {
+        font-size: 15px;
+    }
+    .profile-created {
+        font-size: 13px;
+    }
+    .profile-username {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .profile-bio {
+        font-size: 12px;
+        margin: 40px 60px 20px 5px;
+    }
+    .profile-stats {
+        width: 330px;
+    }
+    .stats {
+        font-size: 25px;
+    }
+    .profile-info {
+        gap: 40px;
+    }
+    .profile-location {
+        font-size: 12px;
+    }
+    .profile-company {
+        font-size: 12px;
+    }
+    .twitter-link {
+        width: 200px;
+        font-size: 12px;
+    }
+    .profile-url {
+        width: 200px;
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 590px) {
+    .main-heading {
+        font-size: 20px;
+    }
+    .search-input {
+        width: 250px;
+    }
+    .search-btn {
+        width: 80px;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .profile-container {
+        width: 400px;
+    }
+    .profile-avatar {
+        width: 50px;
+    }
+    .profile-des {
+        width: 280px;
+        gap: 40px;
+    }
+    .profile-name {
+        font-size: 12px;
+    }
+    .profile-created {
+        font-size: 11px;
+    }
+    .profile-username {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .profile-bio {
+        font-size: 10px;
+        margin: 40px 60px 20px 5px;
+    }
+    .profile-stats {
+        width: 250px;
+        font-size: 10px;
+    }
+    .stats {
+        font-size: 18px;
+    }
+    .profile-info {
+        gap: 20px;
+    }
+    .profile-location {
+        font-size: 10px;
+    }
+    .profile-company {
+        font-size: 10px;
+    }
+    .twitter-link {
+        width: 180px;
+        font-size: 10px;
+    }
+    .profile-url {
+        width: 180px;
+        font-size: 10px;
+    }
+  }

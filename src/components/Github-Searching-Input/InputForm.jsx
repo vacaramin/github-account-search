@@ -1,24 +1,23 @@
-import { useState ,useRef, useEffect} from "react";
-import CSS from "./InputForm.module.css"
+import { useState, useRef, useEffect } from "react";
+import CSS from "./InputForm.module.css";
 
 const InputForm = (props) => {
   const [username, setUserName] = useState("");
   const inputfocus = useRef();
 
-  useEffect(()=>{
-      inputfocus.current.focus();
-  },[username])
+  useEffect(() => {
+    inputfocus.current.focus();
+  }, [username]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.SearchUsername(username)
-
+    props.searchUsername(username);
   };
 
   return (
     <form onSubmit={handleSubmit} className={CSS["search-form"]}>
       <input
-      ref={inputfocus}
+        ref={inputfocus}
         type="text"
         placeholder="Enter github username"
         value={username}
