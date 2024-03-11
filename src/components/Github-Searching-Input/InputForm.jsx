@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import CSS from "./InputForm.module.css";
 
+
 const InputForm = (props) => {
   const [username, setUserName] = useState("");
   const inputfocus = useRef();
@@ -11,6 +12,10 @@ const InputForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(username.trim('')===''){
+      return;
+    }
     props.searchUsername(username);
   };
 

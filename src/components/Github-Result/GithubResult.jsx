@@ -34,6 +34,15 @@ const GithubResult = ({ userProfile }) => {
               </p>
             </div>
 
+            <div className={CSS["profile-info"]}>
+              <p className={CSS["profile-location"]}>
+                <FaMapMarkerAlt /> {userProfile.location}
+              </p>
+              <p className={CSS["profile-company"]}>
+                <PiBuildingsFill /> {userProfile.company}
+              </p>
+            </div>
+
             <div className={CSS["profile-stats"]}>
               <p className={CSS["profile-repos"]}>
                 Repositories
@@ -49,15 +58,6 @@ const GithubResult = ({ userProfile }) => {
                 Following
                 <br />
                 <span className={CSS["stats"]}>{userProfile.following}</span>
-              </p>
-            </div>
-
-            <div className={CSS["profile-info"]}>
-              <p className={CSS["profile-location"]}>
-                <FaMapMarkerAlt /> {userProfile.location}
-              </p>
-              <p className={CSS["profile-company"]}>
-                <PiBuildingsFill /> {userProfile.company}
               </p>
             </div>
 
