@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import CSS from "./InputForm.module.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const InputForm = (props) => {
@@ -14,6 +16,7 @@ const InputForm = (props) => {
     e.preventDefault();
 
     if(username.trim('')===''){
+      toast.error('please enter username!!!')
       return;
     }
     props.searchUsername(username);
@@ -33,6 +36,7 @@ const InputForm = (props) => {
       <button type="submit" className={CSS["search-btn"]}>
         Search
       </button>
+      <ToastContainer/>
     </form>
   );
 };
