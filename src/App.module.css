@@ -1,0 +1,21 @@
+body {
+  background-color: #717888;
+  color: #fefefe;
+  font-family: Poppin;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 2.4rem;
+  padding: 1.2rem;
+  font-weight: 600;
+  word-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
+}
